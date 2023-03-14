@@ -1,144 +1,93 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>prak1</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-
-
-<script src="prak1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="prak1_files/libs/quarto-html/quarto.js"></script>
-<script src="prak1_files/libs/quarto-html/popper.min.js"></script>
-<script src="prak1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="prak1_files/libs/quarto-html/anchor.min.js"></script>
-<link href="prak1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="prak1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="prak1_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="prak1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="prak1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-
-
-</head>
-
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+::: {#quarto-content .page-columns .page-rows-contents .page-layout-article}
 <main class="content" id="quarto-document-content">
 
-
-
 <section id="системы-аутентификациии-и-защиты-от-несанкционированного-доступа" class="level1">
+
 <h1>Системы аутентификациии и защиты от несанкционированного доступа</h1>
+
 <p>Лабораторная работа №1</p>
+
 <section id="цель-работы" class="level2">
-<h2 class="anchored" data-anchor-id="цель-работы">Цель работы</h2>
+
+<h2 class="anchored" data-anchor-id="цель-работы">
+
+Цель работы
+
+</h2>
+
 <p>Вывести информацию о процессоре, операционной системе и о последних логах</p>
+
 </section>
+
 <section id="исходные-данные" class="level2">
-<h2 class="anchored" data-anchor-id="исходные-данные">Исходные данные</h2>
+
+<h2 class="anchored" data-anchor-id="исходные-данные">
+
+Исходные данные
+
+</h2>
+
 <ol type="1">
+
 <li>ОС Windows 11</li>
+
 <li>IDE RStudio</li>
+
 <li>Интерпретатор языка R 4.2.2</li>
+
 </ol>
+
 </section>
+
 <section id="план" class="level2">
-<h2 class="anchored" data-anchor-id="план">План</h2>
+
+<h2 class="anchored" data-anchor-id="план">
+
+План
+
+</h2>
+
 <ol type="1">
-<li>Выполнить команду “systeminfo”</li>
-<li>Выполнить команду “wmic cpu get name”</li>
-<li>Выполнить команду “Get-EventLog -LogName System -Newest 30”</li>
+
+<li>Выполнить команду "systeminfo"</li>
+
+<li>Выполнить команду "wmic cpu get name"</li>
+
+<li>Выполнить команду "Get-EventLog -LogName System -Newest 30"</li>
+
 </ol>
+
 </section>
+
 <section id="шаги" class="level2">
-<h2 class="anchored" data-anchor-id="шаги">Шаги</h2>
+
+<h2 class="anchored" data-anchor-id="шаги">
+
+Шаги
+
+</h2>
+
 <section id="шаг-1" class="level3">
-<h3 class="anchored" data-anchor-id="шаг-1">Шаг 1</h3>
-<p>Выполнение команды “systeminfo” для вывода информации об операционной системе</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"systeminfo"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
+
+<h3 class="anchored" data-anchor-id="шаг-1">
+
+Шаг 1
+
+</h3>
+
+<p>Выполнение команды "systeminfo" для вывода информации об операционной системе</p>
+
+::: cell
+::: {#cb1 .sourceCode .cell-code}
+```{=html}
+<pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"systeminfo"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
+```
+:::
+
+::: {.cell-output .cell-output-stdout}
+```{=html}
 <pre><code> [1] ""                                                                                                               
  [2] "Host Name:                 НОУТБУК"                                                                             
  [3] "OS Name:                   Майкрософт Windows 11 Домашняя для одного языка"                                     
@@ -196,27 +145,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 [55] "                                 Connection Name: Сетевое подключение Bluetooth"                                
 [56] "                                 Status:          Media disconnected"                                           
 [57] "Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed."</code></pre>
-</div>
-</div>
+```
+:::
+:::
+
 </section>
+
 <section id="шаг-2" class="level3">
-<h3 class="anchored" data-anchor-id="шаг-2">Шаг 2</h3>
-<p>Выполнение команды “wmic cpu get name” для вывода информации о процессоре</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"wmic cpu get name"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
+
+<h3 class="anchored" data-anchor-id="шаг-2">
+
+Шаг 2
+
+</h3>
+
+<p>Выполнение команды "wmic cpu get name" для вывода информации о процессоре</p>
+
+::: cell
+::: {#cb3 .sourceCode .cell-code}
+```{=html}
+<pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"wmic cpu get name"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
+```
+:::
+
+::: {.cell-output .cell-output-stdout}
+```{=html}
 <pre><code>[1] "Name                                      \r"
 [2] "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz  \r"
 [3] "\r"                                          </code></pre>
-</div>
-</div>
+```
+:::
+:::
+
 </section>
+
 <section id="шаг-3" class="level3">
-<h3 class="anchored" data-anchor-id="шаг-3">Шаг 3</h3>
-<p>Выполнение команды “Get-EventLog -LogName System -Newest 30” для получения информации о последних 30 логах системы</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"powershell"</span>, <span class="at">args  =</span> <span class="st">"Get-EventLog -LogName System -Newest 30"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
+
+<h3 class="anchored" data-anchor-id="шаг-3">
+
+Шаг 3
+
+</h3>
+
+<p>Выполнение команды "Get-EventLog -LogName System -Newest 30" для получения информации о последних 30 логах системы</p>
+
+::: cell
+::: {#cb5 .sourceCode .cell-code}
+```{=html}
+<pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"powershell"</span>, <span class="at">args  =</span> <span class="st">"Get-EventLog -LogName System -Newest 30"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
+```
+:::
+
+::: {.cell-output .cell-output-stdout}
+```{=html}
 <pre><code> [1] ""                                                                                                                       
  [2] "   Index Time          EntryType   Source                 InstanceID Message                                           "
  [3] "   ----- ----          ---------   ------                 ---------- -------                                           "
@@ -252,22 +233,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 [33] "    9702 мар 14 18:31  Information TPM                            18 This event triggers the Trusted Platform Module..."
 [34] ""                                                                                                                       
 [35] ""                                                                                                                       </code></pre>
-</div>
-</div>
+```
+:::
+:::
+
 </section>
+
 </section>
+
 <section id="оценка-результата" class="level2">
-<h2 class="anchored" data-anchor-id="оценка-результата">Оценка результата</h2>
+
+<h2 class="anchored" data-anchor-id="оценка-результата">
+
+Оценка результата
+
+</h2>
+
 <p>В результате лабораторной работы была получена информация о процессоре, об операционной системе и о последних логах</p>
+
 </section>
+
 <section id="вывод" class="level2">
-<h2 class="anchored" data-anchor-id="вывод">Вывод</h2>
+
+<h2 class="anchored" data-anchor-id="вывод">
+
+Вывод
+
+</h2>
+
 <p>В результате выполнения работы были получены навыки работы с командами Windows через среду разработки RStudio</p>
+
 </section>
+
 </section>
 
 </main>
+
 <!-- /main column -->
+
+```{=html}
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -401,8 +405,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+```
+:::
 
+<!-- /content -->
 
+</body>
 
-</body></html>
+</html>
