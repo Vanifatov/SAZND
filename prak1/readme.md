@@ -1,8 +1,5 @@
 <body class="fullcontent">
 
-::: {#quarto-content .page-columns .page-rows-contents .page-layout-article}
-<main class="content" id="quarto-document-content">
-
 <section id="системы-аутентификациии-и-защиты-от-несанкционированного-доступа" class="level1">
 
 <h1>Системы аутентификациии и защиты от несанкционированного доступа</h1>
@@ -79,14 +76,10 @@
 
 <p>Выполнение команды "systeminfo" для вывода информации об операционной системе</p>
 
-::: cell
-::: {#cb1 .sourceCode .cell-code}
 ```{=html}
 <pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"systeminfo"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
-:::
 
-::: {.cell-output .cell-output-stdout}
 ```{=html}
 <pre><code> [1] ""                                                                                                               
  [2] "Host Name:                 НОУТБУК"                                                                             
@@ -146,8 +139,6 @@
 [56] "                                 Status:          Media disconnected"                                           
 [57] "Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed."</code></pre>
 ```
-:::
-:::
 
 </section>
 
@@ -161,21 +152,14 @@
 
 <p>Выполнение команды "wmic cpu get name" для вывода информации о процессоре</p>
 
-::: cell
-::: {#cb3 .sourceCode .cell-code}
 ```{=html}
 <pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"wmic cpu get name"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
-:::
-
-::: {.cell-output .cell-output-stdout}
 ```{=html}
 <pre><code>[1] "Name                                      \r"
 [2] "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz  \r"
 [3] "\r"                                          </code></pre>
 ```
-:::
-:::
 
 </section>
 
@@ -189,14 +173,11 @@
 
 <p>Выполнение команды "Get-EventLog -LogName System -Newest 30" для получения информации о последних 30 логах системы</p>
 
-::: cell
-::: {#cb5 .sourceCode .cell-code}
 ```{=html}
 <pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"powershell"</span>, <span class="at">args  =</span> <span class="st">"Get-EventLog -LogName System -Newest 30"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
-:::
 
-::: {.cell-output .cell-output-stdout}
+
 ```{=html}
 <pre><code> [1] ""                                                                                                                       
  [2] "   Index Time          EntryType   Source                 InstanceID Message                                           "
@@ -234,8 +215,6 @@
 [34] ""                                                                                                                       
 [35] ""                                                                                                                       </code></pre>
 ```
-:::
-:::
 
 </section>
 
@@ -268,147 +247,6 @@
 </section>
 
 </main>
-
-<!-- /main column -->
-
-```{=html}
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
-    const config = {
-      allowHTML: true,
-      content: contentFn,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start'
-    };
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
-    });
-  }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-```
-:::
-
-<!-- /content -->
 
 </body>
 
