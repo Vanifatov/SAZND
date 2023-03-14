@@ -1,4 +1,10 @@
+</head>
+
 <body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
 
 <section id="системы-аутентификациии-и-защиты-от-несанкционированного-доступа" class="level1">
 
@@ -76,10 +82,14 @@
 
 <p>Выполнение команды "systeminfo" для вывода информации об операционной системе</p>
 
+::: cell
+::: {#cb1 .sourceCode .cell-code}
 ```{=html}
 <pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"systeminfo"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
+:::
 
+::: {.cell-output .cell-output-stdout}
 ```{=html}
 <pre><code> [1] ""                                                                                                               
  [2] "Host Name:                 НОУТБУК"                                                                             
@@ -139,6 +149,8 @@
 [56] "                                 Status:          Media disconnected"                                           
 [57] "Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed."</code></pre>
 ```
+:::
+:::
 
 </section>
 
@@ -152,14 +164,21 @@
 
 <p>Выполнение команды "wmic cpu get name" для вывода информации о процессоре</p>
 
+::: cell
+::: {#cb3 .sourceCode .cell-code}
 ```{=html}
 <pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"wmic cpu get name"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
+:::
+
+::: {.cell-output .cell-output-stdout}
 ```{=html}
 <pre><code>[1] "Name                                      \r"
 [2] "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz  \r"
 [3] "\r"                                          </code></pre>
 ```
+:::
+:::
 
 </section>
 
@@ -173,11 +192,14 @@
 
 <p>Выполнение команды "Get-EventLog -LogName System -Newest 30" для получения информации о последних 30 логах системы</p>
 
+::: cell
+::: {#cb5 .sourceCode .cell-code}
 ```{=html}
-<pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"powershell"</span>, <span class="at">args  =</span> <span class="st">"Get-EventLog -LogName System -Newest 30"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
+<pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"powershell"</span>, <span class="at">args =</span> <span class="st">"Get-EventLog -LogName System -Newest 30"</span>, <span class="at">stdout =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 ```
+:::
 
-
+::: {.cell-output .cell-output-stdout}
 ```{=html}
 <pre><code> [1] ""                                                                                                                       
  [2] "   Index Time          EntryType   Source                 InstanceID Message                                           "
@@ -215,6 +237,9 @@
 [34] ""                                                                                                                       
 [35] ""                                                                                                                       </code></pre>
 ```
+</pre>
+:::
+:::
 
 </section>
 
@@ -245,8 +270,6 @@
 </section>
 
 </section>
-
-</main>
 
 </body>
 
